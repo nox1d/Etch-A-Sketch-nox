@@ -8,3 +8,9 @@ for (i = 0; i < gridSize; i++) {
     gridCell.classList.add('cell');
     container.appendChild(gridCell);
 }
+
+for (let cell of container.children) {
+    cell.addEventListener('mouseenter', () => {
+        cell.classList.add('colored');
+    });
+}
