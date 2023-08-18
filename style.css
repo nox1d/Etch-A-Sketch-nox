@@ -1,0 +1,14 @@
+.container#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    height: 340px;
+}
+
+.cell {
+    outline: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 1px;
+}
