@@ -1,16 +1,16 @@
 .container#grid {
     display: flex;
     flex-wrap: wrap;
-    width: 340px;
-    height: 340px;
+    width: 1024px;
+    height: 1024px;
 }
 
 .cell {
     outline: 1px solid black;
-    width: 20px;
-    height: 20px;
     margin-top: 1px;
     margin-left: 1px;
+    width: 6%;
+    height: 6%;
 }
 
 .colored {
