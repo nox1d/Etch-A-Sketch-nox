@@ -25,3 +25,13 @@ body {
 .colored {
     background-color: burlywood;
 }
+
+button#resize {
+    width: 512px;
+    height: 128px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: cornsilk;
+}
