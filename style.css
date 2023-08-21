@@ -1,14 +1,14 @@
 .container#grid {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     width: 1024px;
     height: 1024px;
 }
 
 .cell {
-    outline: 1px solid black;
-    margin-top: 1px;
-    margin-left: 1px;
+    border: 1px solid black;
+    box-sizing: border-box;
     width: 6%;
     height: 6%;
 }
