@@ -2,8 +2,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
+    gap: 16px;
 }
 
 .container#grid {
