@@ -1,6 +1,24 @@
+function resizeCanvas() {
+    container.replaceChildren();
+    let cellSize = ((1/pixel) * 100);
+    console.log(cellSize);
+    for (i = 0; i < gridSize; i++) {
+        gridCell = document.createElement('div');
+        gridCell.classList.add('cell');
+        gridCell.style.width = cellSize + '%'
+        gridCell.style.height = cellSize + '%'
+        container.appendChild(gridCell);
+    }
+    for (let cell of container.children) {
+        cell.addEventListener('mouseenter', () => {
+            cell.classList.add('colored');
+        });
+    }
+}
+
 const btn = document.getElementById('resize');
 let pixel;
-let gridSize = 0;
+let gridSize = 16*16;
 btn.addEventListener('click', () => {
     let resizePrompt = prompt('Enter the amount of pixel you want for each side (e.g. 16 -> 16x16), max = 100');
 
@@ -15,7 +33,8 @@ btn.addEventListener('click', () => {
     }
     pixel = parseInt(resizePrompt);
     gridSize = pixel*pixel;
-    return gridSize;
+    resizeCanvas();
+    return pixel;
 });
 
 const container = document.getElementById('grid');
