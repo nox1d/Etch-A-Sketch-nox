@@ -16,6 +16,7 @@ function resizeCanvas() {
     }
 }
 
+// Resize canvas button
 const btn = document.getElementById('resize');
 let pixel;
 let gridSize = 16*16;
@@ -37,6 +38,7 @@ btn.addEventListener('click', () => {
     return pixel;
 });
 
+// Default state
 const container = document.getElementById('grid');
 
 let gridCell;
