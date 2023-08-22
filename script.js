@@ -47,6 +47,7 @@ function colorCell(mode) {
     if (mode === 'default') {
         for (let cell of container.children) {
             cell.addEventListener('mouseenter', () => {
+                cell.classList.remove('rainbow');
                 cell.classList.add('colored');
             });
         }
@@ -56,6 +57,7 @@ function colorCell(mode) {
                 let r = Math.floor(Math.random() * 256);
                 let g = Math.floor(Math.random() * 256);
                 let b = Math.floor(Math.random() * 256);
+                cell.classList.remove('colored');
                 cell.classList.add('rainbow');
                 cell.style['background-color'] = `rgb(${r}, ${g}, ${b})`;
             });
