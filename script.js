@@ -31,6 +31,7 @@ const rainbowBtn = document.getElementById('rainbow');
 rainbowBtn.addEventListener('click', () => {
     mode = 'rainbow'
     console.log(mode);
+    colorCell(mode);
 });
 
 // 'Hover' function to color cells
