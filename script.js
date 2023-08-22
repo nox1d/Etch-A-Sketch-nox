@@ -18,13 +18,6 @@ function resizeCanvas() {
 
 let mode = 'default';
 console.log(mode);
-// function rainbow() {
-//     let r = Math.floor(Math.random() * 256);
-//     let g = Math.floor(Math.random() * 256);
-//     let b = Math.floor(Math.random() * 256);
-//     cell.classList.add('rainbow');
-//     cell.style['background-color'] = `rgb(${r}, ${g}, ${b})`;
-// }
 
 // Rainbow mode button
 const rainbowBtn = document.getElementById('rainbow');
