@@ -36,7 +36,7 @@ defaultBtn.addEventListener('click', () => {
 // Rainbow mode button
 const rainbowBtn = document.getElementById('rainbow');
 rainbowBtn.addEventListener('click', () => {
-    mode = 'rainbow'
+    mode = 'rainbow';
     console.log(mode);
     colorCell(mode);
 });
