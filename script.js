@@ -1,7 +1,6 @@
-function resizeCanvas() {
+function generateCanvas() {
     container.replaceChildren();
     let cellSize = ((1/pixel) * 100);
-    console.log(cellSize);
     for (i = 0; i < gridSize; i++) {
         gridCell = document.createElement('div');
         gridCell.classList.add('cell');
@@ -9,15 +8,22 @@ function resizeCanvas() {
         gridCell.style.height = cellSize + '%'
         container.appendChild(gridCell);
     }
-    for (let cell of container.children) {
-        cell.addEventListener('mouseenter', () => {
-            cell.classList.add('colored');
-        });
-    }
+}
+
+function resizeCanvas() {
+    generateCanvas();
+    colorCell(mode);
 }
 
 let mode = 'default';
 console.log(mode);
+
+// Reset button
+const resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', () => {
+    generateCanvas();
+    colorCell(mode);
+});
 
 // Rainbow mode button
 const rainbowBtn = document.getElementById('rainbow');
