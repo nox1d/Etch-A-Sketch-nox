@@ -25,6 +25,14 @@ resetBtn.addEventListener('click', () => {
     colorCell(mode);
 });
 
+// Default mode button
+const defaultBtn = document.getElementById('default');
+defaultBtn.addEventListener('click', () => {
+    mode = 'default';
+    console.log(mode);
+    colorCell(mode);
+});
+
 // Rainbow mode button
 const rainbowBtn = document.getElementById('rainbow');
 rainbowBtn.addEventListener('click', () => {
