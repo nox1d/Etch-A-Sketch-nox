@@ -16,6 +16,24 @@ function resizeCanvas() {
     }
 }
 
+let mode = 'default';
+console.log(mode);
+function rainbow() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return 'rainbow';
+    // cell.classList.add('rainbow');
+    // cell.style['background-color'] = `rgb(${r}, ${g}, ${b})`;
+}
+
+// Rainbow mode button
+const rainbowBtn = document.getElementById('rainbow');
+rainbowBtn.addEventListener('click', () => {
+    mode = rainbow();
+    console.log(mode);
+});
+
 // Resize canvas button
 const btn = document.getElementById('resize');
 let pixel;
@@ -52,5 +70,5 @@ for (i = 0; i < gridSize; i++) {
 for (let cell of container.children) {
     cell.addEventListener('mouseenter', () => {
         cell.classList.add('colored');
-    });
+    })
 }
