@@ -12,7 +12,7 @@ function generateCanvas() {
 
 function resizeCanvas() {
     generateCanvas();
-    colorCell(mode);
+    colorCell();
 }
 
 let mode = 'default';
@@ -22,7 +22,7 @@ console.log(mode);
 const resetBtn = document.getElementById('reset');
 resetBtn.addEventListener('click', () => {
     generateCanvas();
-    colorCell(mode);
+    colorCell();
 });
 
 // Default mode button
@@ -30,7 +30,7 @@ const defaultBtn = document.getElementById('default');
 defaultBtn.addEventListener('click', () => {
     mode = 'default';
     console.log(mode);
-    colorCell(mode);
+    colorCell();
 });
 
 // Rainbow mode button
@@ -38,30 +38,34 @@ const rainbowBtn = document.getElementById('rainbow');
 rainbowBtn.addEventListener('click', () => {
     mode = 'rainbow';
     console.log(mode);
-    colorCell(mode);
+    colorCell();
 });
+
+// Mode functions
+const container = document.getElementById('grid');
+let cells = container.children;
+
+function colorMode() {
+    if (mode === 'rainbow') {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        this.classList.remove('colored');
+        this.classList.add('rainbow');
+        this.style['background-color'] = `rgb(${r}, ${g}, ${b})`;
+    } else if (mode === 'default') {
+        this.classList.remove('rainbow');
+        this.style['background-color'] = '';
+        this.classList.add('colored');
+    }
+}
+
 
 // 'Hover' function to color cells
 
-function colorCell(mode) {
-    if (mode === 'default') {
-        for (let cell of container.children) {
-            cell.addEventListener('mouseenter', () => {
-                cell.classList.remove('rainbow');
-                cell.classList.add('colored');
-            });
-        }
-    } else if (mode === 'rainbow') {
-        for (let cell of container.children) {
-            cell.addEventListener('mouseenter', () => {
-                let r = Math.floor(Math.random() * 256);
-                let g = Math.floor(Math.random() * 256);
-                let b = Math.floor(Math.random() * 256);
-                cell.classList.remove('colored');
-                cell.classList.add('rainbow');
-                cell.style['background-color'] = `rgb(${r}, ${g}, ${b})`;
-            });
-        }
+function colorCell() {
+    for (let cell of cells) {
+        cell.addEventListener('mouseenter', colorMode);
     }
 }
 
@@ -88,9 +92,9 @@ btn.addEventListener('click', () => {
 });
 
 // Default state
-const container = document.getElementById('grid');
+
 
 let gridCell;
 
 generateCanvas();
-colorCell(mode);
+colorCell();
