@@ -41,6 +41,14 @@ rainbowBtn.addEventListener('click', () => {
     colorCell();
 });
 
+// Darken mode button
+const darkenBtn = document.getElementById('darken');
+darkenBtn.addEventListener('click', () => {
+    mode = 'darken';
+    console.log(mode);
+    colorCell();
+});
+
 // Mode functions
 const container = document.getElementById('grid');
 let cells = container.children;
