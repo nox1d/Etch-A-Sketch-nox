@@ -7,6 +7,19 @@ body {
     gap: 16px;
 }
 
+.header {
+    min-width: 100vw;
+    min-height: 4em;
+}
+
+.header p {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    padding: 1em;
+    margin: 0;
+}
+
 .mainContainer {
     min-width: 64em;
     min-height: 40em;
