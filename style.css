@@ -8,10 +8,11 @@ body {
 }
 
 .mainContainer {
-    min-width: 75vw;
-    min-height: 75vh;
+    min-width: 1024px;
+    min-height: 1024px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border: 1px solid;
 }
 
