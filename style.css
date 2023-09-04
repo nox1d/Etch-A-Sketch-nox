@@ -7,7 +7,7 @@ body {
     gap: 16px;
 }
 
-.header {
+.header, .footer {
     min-width: 100vw;
     min-height: 12.5vh;
 }
