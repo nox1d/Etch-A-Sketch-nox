@@ -12,7 +12,7 @@ body {
     min-height: 12.5vh;
 }
 
-.header p {
+.header p, .footer p {
     text-align: center;
     font-size: 3em;
     font-weight: 800;
