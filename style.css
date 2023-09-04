@@ -7,6 +7,15 @@ body {
     gap: 16px;
 }
 
+.mainContainer {
+    min-width: 115em;
+    min-height: 85em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 16px 8px 64px 8px black;
+}
 .contentContainer {
     min-width: 1024px;
     min-height: 1024px;
