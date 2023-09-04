@@ -9,7 +9,7 @@ body {
 
 .header {
     min-width: 100vw;
-    min-height: 4em;
+    min-height: 12.5vh;
 }
 
 .header p {
