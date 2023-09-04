@@ -89,6 +89,7 @@ button {
     font-size: 1.25rem;
     color: hsl(43, 98%, 84%);
     font-weight: 700;
+    font-family: "Lucida Console", "Courier New", monospace;
     border: none;
     border-radius: 16px;
     background-color: hsl(25, 95%, 45%);
