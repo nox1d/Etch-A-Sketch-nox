@@ -14,10 +14,13 @@ body {
 
 .header p, .footer p {
     text-align: center;
-    font-size: 3em;
-    font-weight: 800;
     padding: 1em;
     margin: 0;
+}
+
+.header p {
+    font-size: 3em;
+    font-weight: 800;
 }
 
 .contentBody {
