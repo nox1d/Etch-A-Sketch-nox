@@ -16,8 +16,12 @@ body {
 
 .btnContainer {
     width: 25%;
+    height: auto;
+    background-color: slateblue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 .container#grid {
