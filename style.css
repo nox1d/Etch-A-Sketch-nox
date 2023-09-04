@@ -20,6 +20,15 @@ body {
     margin: 0;
 }
 
+.contentBody {
+    min-width: 100vw;
+    min-height: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .mainContainer {
     min-width: 64em;
     min-height: 40em;
