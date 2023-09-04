@@ -22,7 +22,7 @@ body {
 
 .contentBody {
     min-width: 100vw;
-    min-height: 75vw;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
