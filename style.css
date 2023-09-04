@@ -8,8 +8,8 @@ body {
 }
 
 .mainContainer {
-    min-width: 115em;
-    min-height: 85em;
+    min-width: 64em;
+    min-height: 32em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +18,8 @@ body {
 }
 
 .contentContainer {
-    min-width: 1024px;
-    min-height: 1024px;
+    min-width: 32em;
+    min-height: 16em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,8 +39,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    width: 1024px;
-    height: 1024px;
+    width: 32em;
+    height: 32em;
     background-color: hsl(0, 17%, 86%);
     border: 1px solid black;
 }
