@@ -9,7 +9,7 @@ body {
 
 .mainContainer {
     min-width: 64em;
-    min-height: 32em;
+    min-height: 40em;
     display: flex;
     justify-content: center;
     align-items: center;
