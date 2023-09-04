@@ -41,8 +41,8 @@ body {
 }
 
 button {
-    width: 512px;
-    height: 128px;
+    width: 75%;
+    height: 12.5%;
     font-size: 2.5rem;
     font-weight: 700;
     border: 2px solid black;
